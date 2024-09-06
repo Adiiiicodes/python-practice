@@ -2,7 +2,7 @@
 
 top =-1
 max = 10
-st = [max]
+st = [0]*max
 
 
 def display():
@@ -36,7 +36,7 @@ def push(top):
         print("Error : StackOverflow")
     else:
         top=top+1
-        st.append(item)
+        st[top]=item
 
 
 
