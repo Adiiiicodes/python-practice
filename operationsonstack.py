@@ -10,7 +10,7 @@ def display():
         print('Error : Stack is empty')
     else :
         print('The Elements in Stack are :')
-        for i in range(0, max-1):
+        for i in range(top,-1,-1):
             print(f'{st[i]}')
 
 
