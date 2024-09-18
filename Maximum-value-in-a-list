@@ -1,0 +1,16 @@
+def max(list,x):
+    max=list[0]
+    for i in range(0,x):
+        if list[i] >= max :
+            max = list[i]
+
+    print(f'{max} is the maximum value in the list')
+
+x=int(input('Enter the size of the list : '))
+list = []
+
+for i in range(0,x):
+    y=int(input(f'Enter the element at {i}: '))
+    list.append(y)
+
+max(list,x)
