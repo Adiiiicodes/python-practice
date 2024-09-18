@@ -1,0 +1,8 @@
+def fac(x):
+    fac=1
+    for i in range(1,x+1):
+        fac=fac*i
+    print(f'The Factorial of {x} is {fac}')
+
+x=int(input('Enter a number : '))
+fac(x)
