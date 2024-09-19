@@ -1,0 +1,10 @@
+from os.path import split
+def strev(x):
+    split(x)
+    y=[]
+    for i in range(len(x)-1,-1,-1):
+        y.append(x[i])
+    print(y)
+
+x= input('Enter a string : ')
+strev(x)
