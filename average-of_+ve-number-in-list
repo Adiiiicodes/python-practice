@@ -1,0 +1,17 @@
+def avg(y):
+    num=0
+    for i in range(y):
+        if list[i]>=0:
+            num=num+list[i]
+    print(f'The Average of all positive integers in the list is : {num/2}')
+
+
+
+y=int(input('Enter the size of the list : '))
+list=[y]
+x=0
+for i in range(y):
+    x = int(input(f'Enter the number in the list at index {i} : '))
+    list.append(x)
+
+avg(y)
