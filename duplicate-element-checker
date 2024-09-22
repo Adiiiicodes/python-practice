@@ -1,0 +1,19 @@
+def rde(list1):
+    list2 = []
+    for i in range(len(list1)):
+        count = 0
+        for j in range(len(list1)):
+            if list1[i] == list1[j]:
+                count += 1
+        if count > 1 and list1[i] not in list2:
+            list2.append(list1[i])
+    print("Duplicates in the list are:", list2)
+
+y = int(input('Enter the number of elements in the list: '))
+list1 = []
+
+for i in range(y):
+    x = int(input(f'Enter the element at index {i}: '))
+    list1.append(x)
+
+rde(list1)
