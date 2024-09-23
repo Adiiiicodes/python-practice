@@ -1,0 +1,37 @@
+def msl(l1, l2, x, y):
+    for k in range(len(l1) - 1):
+        for l in range(len(l1) - 1 - k):
+            if l1[l] > l1[l + 1]:
+                l1[l], l1[l + 1] = l1[l + 1], l1[l]
+    print(f'The sorted list 1 is {l1}')
+
+    for m in range(len(l2) - 1):
+        for n in range(len(l2) - 1 - m):
+            if l2[n] > l2[n + 1]:
+                l2[n], l2[n + 1] = l2[n + 1], l2[n]
+    print(f'The sorted list 2 is {l2}')
+
+    l3 = l1 + l2
+
+    for q in range(len(l3) - 1):
+        for r in range(len(l3) - 1 - q):
+            if l3[r] > l3[r + 1]:
+                l3[r], l3[r + 1] = l3[r + 1], l3[r]
+    print(f'The sorted and merged list is {l3}')
+
+
+x = int(input('Enter the size of list 1: '))
+y = int(input('Enter the size of list 2: '))
+
+l1 = []
+l2 = []
+
+for i in range(x):
+    e1 = int(input(f'Enter the element of List 1 index {i}: '))
+    l1.append(e1)
+
+for j in range(y):
+    e2 = int(input(f'Enter the element of List 2 index {j}: '))
+    l2.append(e2)
+
+msl(l1, l2, x, y)
