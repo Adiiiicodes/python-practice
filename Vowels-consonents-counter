@@ -1,0 +1,14 @@
+from django.template.defaultfilters import lower
+def vcc(x):
+    count=0
+    count1=0
+    for i in range(len(x)):
+        if x[i]=='a' or x[i]=='e' or x[i]=='i' or x[i]=='o' or x[i]=='u':
+            count += 1
+        else:
+            count1 += 1
+    print(f'The total numbers of Vowels are : {count}')
+    print(f'The total numbers of Consonents are : {count1}')
+
+x=input('Enter a string : ').lower()
+vcc(x)
