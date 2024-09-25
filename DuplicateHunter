@@ -1,0 +1,14 @@
+def remd(li):
+    li2=[]
+    for k in li :
+        if k not in li2 :
+            li2.append(k)
+    print(f'the list without duplicates is {li2}')
+
+
+x=int(input('Enter the size of the list : '))
+li=[]
+for i in range(x):
+    element=int(input(f'the element at index {i} is : '))
+    li.append(element)
+remd(li)
