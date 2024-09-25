@@ -1,0 +1,15 @@
+def bbs(x,bb):
+    for j in range(x):
+        for k in range(x-j-1):
+            if bb[k]>bb[k+1] :
+                temp=bb[k+1]
+                bb[k+1]=bb[k]
+                bb[k]=temp
+    print(f'The sorted list using Bubble Sort Algorithm is : {bb} ')
+
+x = int(input('Enter the size of the list : '))
+bb=[]
+for i in range(x):
+    element=int(input(f'The element at index {i} is : '))
+    bb.append(element)
+bbs(x,bb)
